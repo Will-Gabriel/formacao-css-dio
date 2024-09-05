@@ -25,19 +25,6 @@
   </header>
   <hr>
   <main>
-    <!-- <div>
-      <ul>
-        <li id="pre-definidas">Cores pré-definidas</li>
-        <li id="current-color">Palavra-chave "currentcolor"</li>
-        <li id="hex">Hexadecimal</li>
-        <li id="hex-transparencia">Hexadecimal com transparência</li>
-        <li id="rgb">RGB</li>
-        <li id="rgba">RGBA</li>
-        <li id="hsl">HSL</li>
-        <li id="hsla">HSLA</li>
-      </ul>
-    </div>
-    <hr> -->
     <div>
       <h2>Cores Pré-Definidas e Current Color</h2>
       <p>Em CSS, há uma lista de cores pré-definidas que podem ser usadas diretamente nos estilos sem a necessidade de especificar valores em hexadecimal, RGB, ou HSL. Essas cores são padronizadas pela especificação CSS e são fáceis de lembrar e utilizar.</p>
@@ -174,13 +161,7 @@
             <p>// Aplicando seletores</p>
             <code>
               #hsl {
-                color: #FF0000;  
-              }
-              #hsl {
-                color: #00FF00; 
-              }
-              #hsl {
-                color: #0000FF; 
+                color: hsl(45, 100%, 50%);   // hsl(hue, saturation, lightness, alpha)
               }
             </code>
           </pre>
@@ -194,13 +175,7 @@
             <p>// Aplicando seletores</p>
             <code>
               #hsla {
-                color: #FF000000; 
-              }
-              #hsla {
-                color: #00FF00FF; 
-              }
-              #hsla {
-                color: #0000FF00; 
+                color: hsl(45, 100%, 50%, 0.3);   // hsla(hue, saturation, lightness, alpha)
               }
             </code>
           </pre>
