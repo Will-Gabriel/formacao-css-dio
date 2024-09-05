@@ -3,9 +3,210 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Cores no CSS</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+    }
+    pre {
+      background-color: #e9e9e9;
+      padding: 5px;
+      width: 900px;
+      border-radius: 8px;
+    }
+  </style>
 </head>
 <body>
-  
+  <header>
+    <h1>Entendendo cores no CSS</h1>
+  </header>
+  <hr>
+  <main>
+    <!-- <div>
+      <ul>
+        <li id="pre-definidas">Cores pré-definidas</li>
+        <li id="current-color">Palavra-chave "currentcolor"</li>
+        <li id="hex">Hexadecimal</li>
+        <li id="hex-transparencia">Hexadecimal com transparência</li>
+        <li id="rgb">RGB</li>
+        <li id="rgba">RGBA</li>
+        <li id="hsl">HSL</li>
+        <li id="hsla">HSLA</li>
+      </ul>
+    </div>
+    <hr> -->
+    <div>
+      <h2>Cores Pré-Definidas e Current Color</h2>
+      <p>Em CSS, há uma lista de cores pré-definidas que podem ser usadas diretamente nos estilos sem a necessidade de especificar valores em hexadecimal, RGB, ou HSL. Essas cores são padronizadas pela especificação CSS e são fáceis de lembrar e utilizar.</p>
+      <ul>
+        <li><p><b>Cores pré-definidas</b></p>
+          <pre>
+            <p>// Exemplo com cores pré-definidas:</p>
+            <code>
+              &lt;h1 id="pre-definidas"&gt;Cores pré-definidas&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #pre-definidas {
+                color: darkviolet;
+              }
+            </code>
+          </pre>
+        </li>
+        <li><p><b>Current Color</b></p>
+          <pre>
+            <p>// Exemplo com currentcolor:</p>
+            <code>
+              &lt;h1 id="current-color"&gt;Palavra-chave "currentcolor"&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #current-color {
+                color: orange;
+                border: 1px solid currentcolor;
+              }
+            </code>
+          </pre>
+        </li>
+      </ul>      
+    </div>
+    <hr>
+    <div>
+      <h2>RGB e RGBA</h2>
+      <p>As funções RGB e RGBA em CSS são usadas para definir cores com base nos valores de vermelho (Red), verde (Green), azul (Blue) e, no caso do RGBA, também o valor de transparência (Alpha). Essas funções permitem um controle mais preciso sobre as cores e a opacidade do elemento.</p>
+      <ul>
+        <li><p><b>RGB</b>: A função rgb() define uma cor especificando os valores de vermelho, verde e azul. Cada valor pode variar de 0 a 255.</p>
+          <pre>
+            <p>// Exemplo com cores RGB:</p>
+            <code>
+              &lt;h1 id="rgb"&gt;Cores RGB&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #rgb {
+                color: rgb(0, 0, 255);  // rgb(red, green, blue)
+              }
+            </code>
+          </pre>
+        </li>
+        <li><p><b>RGBA</b>: A função rgba() é semelhante à rgb(), mas inclui um quarto parâmetro, o canal alpha, que define a opacidade da cor. O valor de alpha varia de 0 (completamente transparente) a 1 (completamente opaco).</p>
+          <pre>
+            <p>// Exemplo com RGBA:</p>
+            <code>
+              &lt;h1 id="rgba"&gt;Cores RGBA&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #rgba {
+                color: rgba(0, 255, 0, 0.8);  // rgb(red, green, blue, transparent(0.0 até 1.0))
+              }
+            </code>
+          </pre>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div>
+      <h2>Hexadecimal e Hexadecimal com transparência</h2>
+      <p>Em CSS, as cores podem ser definidas utilizando valores hexadecimais, que são representações numéricas da cor baseadas em componentes de vermelho, verde e azul (RGB). Também é possível adicionar um valor de transparência (alfa) ao formato hexadecimal.</p>
+      <ul>
+        <li><p><b>Cores Hexadecimal</b>: Um valor hexadecimal é composto por três pares de dígitos que representam os níveis de vermelho, verde e azul, com valores variando de 00 (ausência de cor) a FF (máxima intensidade de cor).</p>
+          <pre>
+            <p>// Exemplo com cores Hexadecimal:</p>
+            <code>
+              &lt;h1 id="hex"&gt;Cores Hexadecimal&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #hex {
+                color: #FF0000; // #red 
+              }
+              #hex {
+                color: #00FF00; // #green 
+              }
+              #hex {
+                color: #0000FF; // #blue 
+              }
+            </code>
+          </pre>
+        </li>
+        <li><p><b>Hexadecimal com transparência</b>: O formato hexadecimal com transparência inclui um quarto par de dígitos para definir o nível de opacidade (alfa). O valor de opacidade varia de 00 (completamente transparente) a FF (completamente opaco).</p>
+          <pre>
+            <p>// Exemplo com Hexadecimal com transparência:</p>
+            <code>
+              &lt;h1 id="hex-transparencia"&gt;Cores Hexadecimal com transparência&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #hex-transparencia {
+                color: #FF000000; // #red transparent
+              }
+              #hex-transparencia {
+                color: #00FF00FF; // #green
+              }
+              #hex-transparencia {
+                color: #0000FF00; // #blue transparent
+              }
+            </code>
+          </pre>
+        </li>
+      </ul>
+    </div>
+    <hr>
+    <div>
+      <h2>HSL e HSLA</h2>
+      <p>HSL e HSLA são formas de representar cores em CSS baseadas em matiz (hue), saturação (saturation) e luminosidade (lightness). HSLA é uma extensão do HSL que inclui o canal de transparência (alpha).</p>
+      <ul>
+        <li><p><b>Cores HSL:</b> A função hsl() define cores de acordo com três parâmetros, são eles.</p>
+          <ul>
+            <li><b>Matiz (Hue)</b>: Um valor em graus (de 0 a 360), representando a cor no círculo cromático (0 = vermelho, 120 = verde, 240 = azul).</li>
+            <li><b>Saturação (Saturation)</b>: Um valor em porcentagem (de 0% a 100%) que indica a intensidade da cor (0% = cinza, 100% = a cor mais viva possível).</li>
+            <li><b>Luminosidade (Lightness)</b>: Um valor em porcentagem (de 0% a 100%) que representa a claridade da cor (0% = preto, 100% = branco).</li>
+          </ul>
+          <pre>
+            <p>// Exemplo com cores HSL:</p>
+            <code>
+              &lt;h1 id="hsl"&gt;Cores HSL&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #hsl {
+                color: #FF0000;  
+              }
+              #hsl {
+                color: #00FF00; 
+              }
+              #hsl {
+                color: #0000FF; 
+              }
+            </code>
+          </pre>
+        </li>
+        <li><p><b>Cores HSLA</b></p>
+          <pre>
+            <p>// Exemplo com HSLA:</p>
+            <code>
+              &lt;h1 id="hsla"&gt;Cores HSLA&lt;/h1&gt;
+            </code>
+            <p>// Aplicando seletores</p>
+            <code>
+              #hsla {
+                color: #FF000000; 
+              }
+              #hsla {
+                color: #00FF00FF; 
+              }
+              #hsla {
+                color: #0000FF00; 
+              }
+            </code>
+          </pre>
+        </li>
+      </ul>
+    </div>
+  </main>
 </body>
 </html>
