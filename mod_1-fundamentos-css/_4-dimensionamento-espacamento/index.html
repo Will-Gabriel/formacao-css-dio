@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Dimensionamento e Espaçamento CSS</title>
+      <style>
+        body {
+          font-family: "Poppins", sans-serif;
+        }
+        pre {
+          background-color: #e9e9e9;
+          padding: 5px;
+          width: 900px;
+          border-radius: 8px;
+        }
+      </style>
+  </head>
+  <body>
+    <header>
+      <h1>Entendendo Dimensionamento e Espaçamento CSS</h1>
+    </header>
+    <hr>
+    <main>
+      <div>
+        <h2>Largura e Altura</h2> 
+        <p>Em CSS, as propriedades largura (width) e altura (height) são usadas para definir o tamanho dos elementos, controlando sua dimensão horizontal e vertical, respectivamente.</p>
+        <pre>
+          <p>// Exemplo:</p>
+          <code>
+            &lt;div&gt;Trilha de CSS&lt;/div&gt;
+
+            &lt;div id="div-01"&gt;
+              Sou a div 01
+              &lt;div id="div-02"&gt;
+                Sou a div 02
+              &lt;/div&gt;
+            &lt;/div&gt;
+          </code>
+          <p>// Aplicando seletores</p>
+          <code>
+            div {
+              width: 200px;
+              height: 100px;
+              background: lightblue;
+            }
+
+            #div-01 {
+              width: 200px;
+              height: 300px;
+              background: lightblue;
+            }
+            #div-02 {
+              background: lightgreen;
+              width: inherit;
+            }
+          </code>
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <h2>Largura e Altura Máxima e Mínima</h2>
+        <p>Em CSS, além de definir a largura e altura de um elemento, você pode controlar os limites usando as propriedades de largura máxima (max-width), largura mínima (min-width), altura máxima (max-height) e altura mínima (min-height). Isso permite um controle mais flexível sobre o dimensionamento dos elementos, especialmente em layouts responsivos.</p>
+        <pre>
+          <p>// Exemplo:</p>
+          <code>
+            &lt;button id="botao-01"&gt;Fechar página&lt;/button&gt;
+            &lt;button id="botao-02"&gt;Fechar página&lt;/button&gt;
+          </code>
+          <p>// Aplicando seletores</p>
+          <code>
+            #botao-01 {
+              min-width: 200px;
+              min-height: 100px;
+              background: lightblue;
+            }
+
+            #botao-02 {
+              min-width: 200px;
+              max-width: 300px;
+              min-height: 100px;
+              max-height: 200px;
+              background: lightblue;
+            }
+          </code>
+        </pre>
+      </div>
+      <hr> 
+      <div>
+        <h2>Margin</h2>
+        <p>A propriedade margin em CSS é usada para criar espaço em torno de elementos, fora de suas bordas. Ela controla a distância entre um elemento e seus elementos vizinhos, tanto no sentido vertical quanto horizontal.</p>
+        <pre>
+          <p>// Exemplo:</p>
+          <code>
+            &lt;div id="elemento-01"&gt;&lt;/div&gt;
+            &lt;div id="elemento-02"&gt;&lt;/div&gt;
+          </code>
+          <p>// Aplicando seletores</p>
+          <code>
+            div {
+              width: 200px;
+              height: 200px;
+            }
+
+            #elemento-01 {
+              background: orange;
+              margin-bottom: 50px; 
+            }
+            #elemento-01 {
+              background: purple;
+              margin: 20px 10px;  // aplica 20px em cima e baixo, e 10px nas laterais
+            }
+            #elemento-01 {
+              background: purple;
+              margin: 20px 10px 40px; // 20px em cima, 10px nas laterais e 40px na parte de baixo
+            }
+            #elemento-01 {
+              background: purple;
+              margin: 20px 10px 20px 30px;  // 20px(cima), 10px(direita), 20px(baixo) e 30px(esquerda)
+            }
+
+            #elemento-02 {
+              background: purple;
+              margin-top: 10px; 
+              margin-left: 25px;
+            }
+            #elemento-02 {
+              background: purple;
+              margin: 30px; // aplica 30px em todos os lados
+            }
+            #elemento-02 {
+              background: purple;
+              margin: auto; // centraliza a div aplicando margins iguais nas laterais
+            }
+            #elemento-02 {
+              background: purple; 
+              margin: 20px auto; // 20px(cima e baixo), centraliza a div aplicando margins iguais nas laterais
+            }
+          </code>
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <h2>Padding</h2>
+        <p>A propriedade padding em CSS define o espaçamento interno de um elemento, ou seja, o espaço entre o conteúdo do elemento e suas bordas. Ao contrário do margin, que cria espaço externo ao redor do elemento, o padding afeta o espaço dentro do próprio elemento.</p>
+        <p>A aplicação dos valores funcionam da mesma forma que o margin, podendo aplicar valores especificos para cada lado (cima, baixo, esquerda e direita).</p>
+        <pre>
+          <p>// Exemplo:</p>
+          <code>
+            &lt;div id="elemento-01"&gt;Elemento 01 da div 01&lt;/div&gt;
+            &lt;div id="elemento-02"&gt;Elemento 02 da div 02&lt;/div&gt;
+          </code>
+          <p>// Aplicando seletores</p>
+          <code>
+            div {
+              width: 200px;
+              height: 200px;
+            }
+
+            #elemento-01 {
+              background: orange;
+              padding: 20px;
+            }
+          </code>
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <h2>Box Sizing</h2>
+        <p>A propriedade box-sizing em CSS define como o navegador deve calcular a largura e a altura de um elemento, considerando o padding e a borda.</p>
+        <ul>
+          <li><b>content-box (padrão)</b>: A largura e altura definidas se aplicam apenas ao conteúdo do elemento. O padding e a borda são adicionados além dessas dimensões.</li>
+          <li><b>border-box</b>: A largura e altura incluem o conteúdo, o padding, e a borda. Isso significa que o tamanho total do elemento não excede o valor definido, e o conteúdo será ajustado para caber dentro do espaço disponível.</li>
+        </ul>
+        <pre>
+          <p>// Exemplo:</p>
+          <code>
+            &lt;div id="elemento-01"&gt;Elemento 01 da div 01&lt;/div&gt;
+            &lt;div id="elemento-02"&gt;Elemento 02 da div 02&lt;/div&gt;
+          </code>
+          <p>// Aplicando seletores</p>
+          <code>
+            div {
+              width: 200px;
+              height: 200px;
+            }
+
+            ---------------------
+            ---- content-box ----
+            ---------------------
+            #elemento-01 {
+              width: 200px;
+              padding: 20px;
+              border: 10px solid black;
+              box-sizing: content-box;   // Padrão aumenta o tamanho total -> 200px + 20px + 20px = 240px
+            }
+
+            --------------------
+            ---- border-box ----
+            --------------------
+            #elemento-02 {
+              width: 200px;
+              padding: 20px;
+              border: 10px solid black;
+              box-sizing: border-box;   // width não muda o tamanho total de 200px 
+            }
+          </code>
+        </pre>
+      </div>
+    </main>
+  </body>
+</html>
