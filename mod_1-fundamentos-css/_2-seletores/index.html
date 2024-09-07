@@ -1,119 +1,109 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<title>Seletores CSS</title>
-    <style>
-        body {
-        font-family: "Poppins", sans-serif;
-        }
-        pre {
-        background-color: #e9e9e9;
-        padding: 5px;
-        width: 800px;
-        border-radius: 8px;
-        }
-    </style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Seletores CSS</title>
+  </head>
+  <body>
     <header>
-        <h1>Entendendo Seletores CSS</h1>
+      <h1>Entendendo Seletores CSS</h1>
     </header>
     <main>
-        <div>
-            <p><b>Seletor por Tipo</b>: Busca elementos por uma tag especifíca.</p>
-            <pre>
-                <p>// Exemplo:</p>
-                h1 {
-                background-color: blue;
-                color: white;
-                }
-            </pre>
-        </div>
-        <hr>
-        <div>
-            <p><b>Seletor por ID (#)</b>: Busca elementos através do atributo "id".</p>
-            <pre>
-                <p>// Exemplo:</p>
-                &lt;div id="container"&gt;Essa div será manipulada no CSS através do seu ID&lt;/div&gt;
+      <div>
+        <p><b>Seletor por Tipo</b>: Busca elementos por uma tag especifíca.</p>
+        <pre>
+          <p>// Exemplo:</p>
+          h1 {
+          background-color: blue;
+          color: white;
+          }
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <p><b>Seletor por ID (#)</b>: Busca elementos através do atributo "id".</p>
+        <pre>
+          <p>// Exemplo:</p>
+          &lt;div id="container"&gt;Essa div será manipulada no CSS através do seu ID&lt;/div&gt;
 
-                #container {
-                background-color: blue;
-                color: white;
-                width: 1200px;
-                }
-            </pre>
-        </div>
-        <hr>
-        <div>
-            <p><b>Seletor por Classe</b>: Busca elementos através do atributo "class".</p>
-            <pre>
-                <p>// Exemplo:</p>
-                &lt;div class="cards"&gt;Essa div será manipulada no CSS através do sua class&lt;/div&gt;
+          #container {
+          background-color: blue;
+          color: white;
+          width: 1200px;
+          }
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <p><b>Seletor por Classe</b>: Busca elementos através do atributo "class".</p>
+        <pre>
+          <p>// Exemplo:</p>
+          &lt;div class="cards"&gt;Essa div será manipulada no CSS através do sua class&lt;/div&gt;
 
-                .cards {
-                background-color: blue;
-                color: white;
-                width: 200px;
-                }
-            </pre>
-        </div>
-        <hr>
-        <div>
-            <p><b>Seletor Universal (*)</b>: Seleciona todos os elementos presentes em uma página HTML.</p>
-            <pre>
-                <p>// Exemplo:</p>
-                * {
-                margin: 0;
-                padding: 0;
-                font-family: "Poppins", sans-serif;
-                }
-            </pre>
-        </div>
-        <hr>
-        <div>
-            <p><b>Seletor de Atributo ([atrib])</b>: Seleciona elementos que possuem um atributo especifíco em nosso documento HTML e conseguimos também buscar atributos com um valor especifíco.</p>
-            <pre>
-                <p>// Exemplo:</p>
-                &lt;ul&gt;
-                &lt;li&gt;
-                    &lt;a title="Prime" href=""&gt;Prime&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a title="Spotify" href=""&gt;Spotify&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;/ul&gt;
+          .cards {
+          background-color: blue;
+          color: white;
+          width: 200px;
+          }
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <p><b>Seletor Universal (*)</b>: Seleciona todos os elementos presentes em uma página HTML.</p>
+        <pre>
+          <p>// Exemplo:</p>
+          * {
+          margin: 0;
+          padding: 0;
+          font-family: "Poppins", sans-serif;
+          }
+        </pre>
+      </div>
+      <hr>
+      <div>
+        <p><b>Seletor de Atributo ([atrib])</b>: Seleciona elementos que possuem um atributo especifíco em nosso documento HTML e conseguimos também buscar atributos com um valor especifíco.</p>
+        <pre>
+          <p>// Exemplo:</p>
+          &lt;ul&gt;
+          &lt;li&gt;
+              &lt;a title="Prime" href=""&gt;Prime&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+              &lt;a title="Spotify" href=""&gt;Spotify&lt;/a&gt;
+          &lt;/li&gt;
+          &lt;/ul&gt;
 
-                [title] {
-                background-color: blue;
-                color: white;
-                }
+          [title] {
+          background-color: blue;
+          color: white;
+          }
 
-                [title="Prime"] {
-                background-color: red;
-                color: white;
-                }
+          [title="Prime"] {
+          background-color: red;
+          color: white;
+          }
 
-                [href^="https://"] {
-                background-color: red;
-                color: white;
-                }
+          [href^="https://"] {
+          background-color: red;
+          color: white;
+          }
 
-                [href$="login"] {
-                background-color: red;
-                color: white;
-                }
+          [href$="login"] {
+          background-color: red;
+          color: white;
+          }
 
-                [href*="login"] {
-                background-color: red;
-                color: white;
-                }
-            </pre>
-        </div>
+          [href*="login"] {
+          background-color: red;
+          color: white;
+          }
+        </pre>
+      </div>
     </main>
-</body>
+  </body>
 </html>
