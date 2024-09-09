@@ -14,7 +14,97 @@
     <h1>Entendendo Imagens no CSS</h1>
   </header>
   <main>
+    <section>
+      <div class="sections">
+        <h1>Propriedade <code>Object-Fit</code></h1>
+        <p>A propriedade object-fit no CSS é usada para controlar como o conteúdo de um elemento substituível, como imagens ou vídeos, se ajusta dentro de um contêiner. Aqui estão as opções de ajuste:</p>
+        <ul>
+          <li>
+            <p><strong>fill</strong>: O conteúdo é esticado para preencher todo o espaço do contêiner, o que pode distorcer a imagem.</p>
+          </li>
+          <li>
+            <p><strong>contain</strong>: Mantém a proporção da imagem, ajustando-a para caber no contêiner. Pode deixar áreas vazias ao redor se o aspecto da imagem não corresponder ao do contêiner.</p>
+          </li>
+          <li>
+            <p><strong>cover</strong>: Mantém a proporção da imagem, mas a ajusta para cobrir todo o contêiner, o que pode resultar no corte da imagem.</p>
+          </li>
+          <li>
+            <p><strong>none</strong>: A imagem é exibida em seu tamanho original, sem redimensionamento.</p>
+          </li>
+          <li>
+            <p><strong>scale-down</strong>: A imagem será redimensionada como se none ou contain fosse aplicado, escolhendo o menor tamanho possível sem distorção.</p>
+          </li>
+        </ul>
+        <p>Essa propriedade é muito útil para evitar a distorção de imagens em layouts responsivos, onde as dimensões do contêiner podem mudar com o tamanho da tela (DevDoc) (HubSpot Blog) (SitePoint).</p>
+      </div>
+
+      <div id="exemplo1">
+        <div class="exemplos-fit">
+          <p>Object-Fit: fill (valor padrão)</p>
+          <div class="obj-fit">
+            <img src="assets/img/logo-dio.jpg" class="img-fit" id="fit-fill">
+          </div>
+        </div>
+
+        <div class="exemplos-fit">
+          <p>Object-Fit: contain</p>
+          <div class="obj-fit">
+            <img src="assets/img/logo-dio.jpg" class="img-fit" id="fit-contain">
+          </div>
+        </div>
+
+        <div class="exemplos-fit">
+          <p>Object-Fit: cover</p>
+          <div class="obj-fit">
+            <img src="assets/img/logo-dio.jpg" class="img-fit" id="fit-cover">
+          </div>
+        </div>
+
+        <div class="exemplos-fit">
+          <p>Object-Fit: none</p>
+          <div class="obj-fit">
+            <img src="assets/img/logo-dio.jpg" class="img-fit" id="fit-none">
+          </div>
+        </div>
+
+        <div class="exemplos-fit">
+          <p>Object-Fit: scale-down</p>
+          <div class="obj-fit">
+            <img src="assets/img/logo-dio.jpg" class="img-fit" id="fit-scale-down">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr>
     
+    <section>
+      <div class="sections">
+        <h1>Propriedade <code>Object-Position</code></h1>
+        <p>A propriedade object-position no CSS é usada para controlar o posicionamento do conteúdo substituível (como imagens ou vídeos) dentro do contêiner, especialmente quando o conteúdo foi redimensionado pela propriedade object-fit. Por padrão, o conteúdo é centralizado dentro do contêiner, mas você pode usar object-position para ajustar a posição.</p>
+        <ul>
+          <li>
+            <p><strong>Palavras-chave</strong>: Você pode usar palavras como top, bottom, left, right e center para posicionar a imagem dentro do contêiner. Por exemplo, object-position: top right; posicionaria o conteúdo no canto superior direito.</p>
+          </li>
+          <li>
+            <p><strong>Valores de comprimento</strong>: Você pode especificar a posição com valores de pixels ou porcentagem, como object-position: 20px 10px; para mover o conteúdo 20 pixels à direita e 10 pixels para baixo.</p>
+          </li>
+          <li>
+            <p><strong>Percentuais</strong>: A posição pode ser ajustada em percentuais, como object-position: 50% 50%;, o que significa que o centro do conteúdo será alinhado com o centro do contêiner.</p>
+          </li>
+        </ul>
+        <p>Essa propriedade é útil quando o conteúdo é cortado ao usar object-fit: cover, permitindo que você ajuste a parte da imagem que será visível (HubSpot Blog) (SitePoint).</p>
+      </div>
+
+      <div id="exemplo2">
+        <div class="exemplos-position">
+          <p>Object-Position</p>
+          <div class="obj-position">
+            <img src="assets/img/logo-dio.jpg" id="img-position">
+          </div>
+        </div>
+      </div> 
+    </section>
   </main>
 </body>
 </html>
