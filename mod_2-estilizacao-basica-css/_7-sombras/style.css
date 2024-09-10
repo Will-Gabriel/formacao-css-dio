@@ -7,9 +7,16 @@ header {
   border-bottom: 1px solid black;
 }
 
-/* ========================================================= */
+/* pre {
+  background-color: #e9e9e9;
+  padding: 5px;
+  width: 900px;
+  border-radius: 8px;
+} */
 
-#exemplo1 {
+
+#exemplo1,
+#exemplo2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -17,12 +24,14 @@ header {
   justify-content: space-around;
 }
 
-.img-fit {
+.img-fit,
+#img-position {
   width: 100%;
   height: 100%;
 }
 
-.exemplos-fit {
+.exemplos-fit,
+.exemplos-position {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,8 +40,8 @@ header {
   background: #e9e9e9;
   border: 1px solid #000000;
 }
-
-.obj-fit {
+.obj-fit,
+.obj-position {
   width: 200px;
   height: 300px;
   border: 1px solid #000000;
@@ -51,46 +60,18 @@ header {
   object-fit: scale-down;
 }
 
-/* ========================================================= */
-
-#exemplo2 {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 30px;
-  justify-content: space-around;
-}
-
-.exemplos-position {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border-radius: 8px;
-  background: #e9e9e9;
-  border: 1px solid #000000;
-}
-
-.obj-position {
-  width: 300px;
-  height: 300px;
-  border: 1px solid #000000;
-}
 
 #img-position {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
   object-position: 30px 40px;
+  /* 
+  object-position: top 10px;
+  object-position: bottom 10px;
+  object-position: right 10px;
+  object-position: left 10px; 
+  object-position: 50% 50%;
+  object-position: 30px 40px;
+  object-position: 30px 50%;
+  object-position: -40px 40px;
+  */
 }
-
-/*
----- Exemplo de Valores para o Position ----
-object-position: top 10px;
-object-position: bottom 10px;
-object-position: right 10px;
-object-position: left 10px;
-object-position: 50% 50%;
-object-position: 30px 50%;
-object-position: -40px 40px;
-*/
