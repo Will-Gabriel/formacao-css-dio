@@ -3,14 +3,33 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
 header {
   border-bottom: 1px solid black;
 }
-
 #container {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
+.cards {
+  background-color: #e9e9e9;
+  padding: 10px;
+  margin: 10px;
+}
+
+.exemplo {
+  width: 300px;
+  height: 300px;
+  border: 15px solid #08c408;
+  background-image: url('../assets/img/logo-dio.jpg');
+  background-size: cover;
+}
+
+#solid {
+  border-style: solid;
+}
+
+#dashed {
+  border-style: dashed;
+}
