@@ -2,43 +2,40 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  height: 200vh;
 }
 header {
   border-bottom: 1px solid black;
 }
-#container {
+/* #container {
   display: flex;
   flex-wrap: wrap;
   gap: 4px;
-}
+} */
 
-.cards {
+/* .cards {
   background-color: #e9e9e9;
   padding: 10px;
-}
+} */
 
 .exemplo {
   width: 300px;
   height: 300px;
   border: 1px solid black;
-  background-size: 120px;
-  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url('../assets/img/cachorro.png');
+  overflow: auto;
+  color: #fff;
 }
 
-#pos-image {
-  background-position: center;
-  /* 
-  background-position: bottom 10px right 10px;
-  background-position: center 80%;
-  background-position: 200px 80%;
-  background-position: center top;
-  background-position: bottom;
-  background-position: 30px 40px;
-  background-position: 20px;
-  background-position: 10%;
-  background-position: top;
-  background-position: left;
-  background-position: right;
-  */
+#fixed {
+  background-attachment: fixed;
+}
+
+#scroll {
+  background-attachment: scroll;
+}
+
+#local {
+  background-attachment: local;
 }
