@@ -3,14 +3,43 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
 header {
   border-bottom: 1px solid black;
 }
-
 #container {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
+.cards {
+  background-color: #e9e9e9;
+  padding: 5px;
+  margin: 5px;
+}
+
+.exemplo {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred;
+  border-width: 10px;
+  border-style: solid;
+  /* background-image: url('../assets/img/logo-dio.jpg');
+  background-size: cover; */
+}
+
+#valor-a {
+  border-color: purple;
+}
+
+#valor-a-b {
+  border-color: purple red;
+}
+
+#valor-a-b-c {
+  border-color: green red black;
+}
+
+#valor-a-b-c-d {
+  border-color: purple blue black green;
+}

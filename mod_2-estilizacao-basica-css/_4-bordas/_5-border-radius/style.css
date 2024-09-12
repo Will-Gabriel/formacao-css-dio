@@ -3,14 +3,56 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
 header {
   border-bottom: 1px solid black;
 }
-
 #container {
   display: flex;
   flex-wrap: wrap;
-  gap: 4px;
+  /* gap: 4px; */
 }
 
+.cards {
+  background-color: #e9e9e9;
+  padding: 5px;
+  margin: 5px;
+}
+
+.exemplo {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred;
+  border-color: purple;
+  border-width: 10px;
+  border-style: solid;
+  /* background-image: url('../assets/img/logo-dio.jpg');
+  background-size: cover; */
+}
+
+#exemplo-1 {
+  border-radius: 10px;
+}
+
+#exemplo-2 {
+  border-radius: 10px 50px;
+}
+
+#exemplo-3 {
+  border-radius: 25px 40px 15px 100px;
+}
+
+#exemplo-4 {
+  border-radius: 150px;
+}
+
+#exemplo-5 {
+  border-radius: 50%;
+}
+
+#exemplo-6 {
+  border-radius: 10% 30%;
+}
+
+#exemplo-7 {
+  border-radius: 50px/100px;
+}

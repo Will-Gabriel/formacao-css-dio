@@ -35,3 +35,39 @@ header {
 #dashed {
   border-style: dashed;
 }
+
+#dotted {
+  border-style: dotted;
+}
+
+#double {
+  border-style: double;
+}
+
+#groove {
+  border-style: groove;
+}
+
+#ridge {
+  border-style: ridge;
+}
+
+#inset {
+  border-style: inset;
+}
+
+#outset {
+  border-style: outset;
+}
+
+#valor-a-b {
+  border-style: dotted dashed;
+}
+
+#valor-a-b-c {
+  border-style: solid dotted dashed ;
+}
+
+#valor-a-b-c-d {
+  border-style: solid dotted dashed double;
+}
