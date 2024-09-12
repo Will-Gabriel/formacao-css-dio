@@ -14,22 +14,44 @@ header {
 
 .cards {
   background-color: #e9e9e9;
-  padding: 10px;
-  margin: 10px;
+  padding: 5px;
+  margin: 5px;
 }
 
 .exemplo {
-  width: 300px;
-  height: 300px;
-  border: 15px solid #08c408;
-  background-image: url('../assets/img/logo-dio.jpg');
-  background-size: cover;
-}
-
-#solid {
+  width: 200px;
+  height: 200px;
+  background-color: palevioletred;
+  border-color: blue;
   border-style: solid;
+  /* background-image: url('../assets/img/logo-dio.jpg');
+  background-size: cover; */
 }
 
-#dashed {
-  border-style: dashed;
+#valor-a {
+  border-width: 10px;
+}
+
+#valor-a-b {
+  border-width: 10px 4px;
+}
+
+#valor-a-b-c {
+  border-width: 15px 5px 30px;
+}
+
+#valor-a-b-c-d {
+  border-width: 10px 4px 15px 25px;
+}
+
+#border-thin {
+  border-width: thin; /* equivale a 1px */
+}
+
+#border-medium {
+  border-width: medium; /* equivale a 3px */
+}
+
+#border-thick {
+  border-width: thick; /* equivale a 5px */
 }
