@@ -28,9 +28,13 @@ header {
 }
 
 #exemplo-1 {
-  border-image-source: url('../assets/img/cachorro.png');
+  border-image-source: url('../assets/img/star.png');
+  border-image-repeat: repeat;
+  border-image-slice: 169;
+  /* border-image-slice: 169 fill; */
 }
 
 #exemplo-2 {
-  border-image-source: linear-gradient(red, blue);
+  border-image-source: linear-gradient(rgb(97, 178, 243), rgb(46, 46, 243));
+  border-image-slice: 30;
 }
