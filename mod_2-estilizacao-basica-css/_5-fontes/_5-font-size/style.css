@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins";
+}
+
+header,
+.fonts-exemplos {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+div {
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+}
+
+code {
+  color: tomato;
+  font-size: 20px;
+}
+
+
+#tamanho {
+  font-size: 20px;
+  /* font-size: 1.5em; */
+}
+
+#xx-small {
+  font-size: xx-small;
+}
+
+#x-small {
+  font-size: x-small;
+}
+
+#small {
+  font-size: small;
+}
+
+#medium {
+  font-size: medium;
+}
+
+#large {
+  font-size: large;
+}
+
+#x-large {
+  font-size: x-large;
+}
+
+#xx-large {
+font-size: xx-large;
+}
+
+
+#pai-filho {
+  font-size: 20px;
+}
+#pai-filho p {
+  font-size: smaller;
+  /* font-size: larger; */
+}
