@@ -18,17 +18,20 @@ code {
 
 .exemplo {
   width: 140px;
-  background-color: #7fff00;
+  height: 140px;
+  padding: 4px;
+  color: #fff;
+  background-color: #0f52cf;
 }
 
-#normal {
-  word-break: normal;
+#horizontal-tb {
+  writing-mode: horizontal-tb;
 }
 
-#break-all {
-  word-break: break-all;
+#vertical-rl {
+  writing-mode: vertical-rl;
 }
 
-#keep-all {
-  word-break: keep-all;
+#vertical-lr {
+  writing-mode: vertical-lr;
 }

@@ -5,8 +5,7 @@ body {
   font-family: "Poppins";
 }
 
-header,
-div {
+header {
   border-bottom: 1px solid black;
   margin-bottom: 15px;
 }
@@ -16,19 +15,11 @@ code {
   font-size: 20px;
 }
 
-.exemplo {
-  width: 140px;
-  background-color: #7fff00;
-}
+h2 {
+  color: deeppink;
+  font-size: 40px;
+  text-align: center;
 
-#normal {
-  word-break: normal;
-}
-
-#break-all {
-  word-break: break-all;
-}
-
-#keep-all {
-  word-break: keep-all;
+  text-shadow: 3px 3px 6px gray;
+  /* text-shadow: -3px 3px 6px gray; */
 }

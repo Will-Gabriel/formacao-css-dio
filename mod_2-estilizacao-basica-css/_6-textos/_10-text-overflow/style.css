@@ -17,18 +17,25 @@ code {
 }
 
 .exemplo {
-  width: 140px;
-  background-color: #7fff00;
+  width: 200px;
+  padding: 2px;
+  background-color: #87aef7;
 }
 
-#normal {
-  word-break: normal;
+p {
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-#break-all {
-  word-break: break-all;
+#clip {
+  text-overflow: clip;
 }
 
-#keep-all {
-  word-break: keep-all;
+#ellipsis {
+  text-overflow: ellipsis;
+}
+
+#string {
+  /* Funciona somente no Firefox */
+  text-overflow: "< Ver mais >";
 }
