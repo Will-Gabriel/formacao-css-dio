@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="reset.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>Unidades de Medidas</title>
+  </head> 
+  <body>
+    <header>
+      <h1>Unidade de Medida Relativa - Porcentagem</h1>
+    </header>
+    <main>
+      <div>
+        <p>A porcentagem é uma unidade de medida que irá utilizar como referência o elemento pai para se basear, podendo alterar os resultados de acordo com o lugar em que está inserido.</p>
+        <img src="../assets/img/2.PNG">
+      </div>
+      <hr>
+      <div>
+        <div>
+          <h2>Porcentagem</h2>
+          <p>Pixel vs Porcentagem</p>
+          <div class="exemplo-pixel">
+            width: 300px;
+          </div>
+          <div class="exemplo-porcentagem">
+            width: 50%;
+          </div>
+        </div>
+        <hr>
+        <div>
+          <p>Elemento pai possui 500px de largura e um font-size de 40px</p>
+          <div id="elemento-pai">
+            <div class="exemplo-pixel">
+              width: 300px;
+            </div>
+            <div class="exemplo-porcentagem" style="font-size: 50%;">
+              width: 50%;
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
