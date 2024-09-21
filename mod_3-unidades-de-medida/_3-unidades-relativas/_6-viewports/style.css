@@ -10,7 +10,7 @@ header {
 }
 
 img {
-  width: 600px;
+  width: 400px;
 }
 
 p {
@@ -31,4 +31,8 @@ div {
 
 .exemplo-03 {
   background-color: aquamarine;
+}
+
+.borda {
+  border: 3px solid #000;
 }

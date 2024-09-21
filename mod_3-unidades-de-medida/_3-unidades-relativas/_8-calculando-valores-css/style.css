@@ -10,11 +10,7 @@ header {
 }
 
 img {
-  width: 600px;
-}
-
-p {
-  margin: 0;
+  width: 500px;
 }
 
 div {
@@ -23,12 +19,12 @@ div {
 
 .exemplo-01 {
   background-color: yellow;
+  box-sizing: border-box;
+  width: 300px;
 }
 
 .exemplo-02 {
   background-color: palevioletred;
-}
-
-.exemplo-03 {
-  background-color: aquamarine;
+  box-sizing: border-box;
+  width: calc(100% - 30px);
 }
